@@ -1,0 +1,52 @@
+#include<iostream>
+#include "HomeWork.h"
+
+using namespace std;
+
+int main()
+{
+	string fname, lname, dcode;
+	float creds, tuitionowed;
+
+
+	Student Info;
+
+
+	cout << "Enter first name : ";
+	cin >> fname;
+
+	cout << "Enter last name : ";
+	cin >> lname;
+
+	cout << "Enter district code : ";
+	cin >> dcode;
+
+	cout << "Enter credit hrs : ";
+	cin >> creds;
+
+	Info.FirstName(fname);
+	Info.LastName(lname);
+	Info.District(dcode);
+	Info.credits(creds);
+
+	cout << Info.FirstName() << "  " << Info.LastName() << " Owes $" << Info.tuition() << endl;
+
+
+
+
+	// Another method of using 
+
+	Student Info2;
+
+
+	Info2.FirstName("John");
+	Info2.LastName("Doe");
+	Info2.District("out");
+	Info2.credits(10);
+
+	cout << Info2.FirstName() << "  " << Info2.LastName() << " Owes $" << Info2.tuition() << endl;
+
+
+
+	return 0;
+}
